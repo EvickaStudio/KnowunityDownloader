@@ -6,20 +6,9 @@ from typing import List
 
 import requests
 from PyQt5.QtCore import pyqtSignal
-from PyQt5.QtWidgets import (
-    QApplication,
-    QCheckBox,
-    QFileDialog,
-    QHBoxLayout,
-    QLabel,
-    QLineEdit,
-    QMainWindow,
-    QMessageBox,
-    QProgressBar,
-    QPushButton,
-    QVBoxLayout,
-    QWidget,
-)
+from PyQt5.QtWidgets import (QApplication, QCheckBox, QFileDialog, QHBoxLayout,
+                             QLabel, QLineEdit, QMainWindow, QMessageBox,
+                             QProgressBar, QPushButton, QVBoxLayout, QWidget)
 
 
 class KnowUnityPDFLoader:
@@ -31,7 +20,7 @@ class KnowUnityPDFLoader:
         self.url = url
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": "KnowUnityPDFLoader/1.0"})
-        self.regex = r"https:\/\/content-eu-central-1\.knowunity\.com\/CONTENT\/([A-Za-z0-9]+)_COMPRESSED\.pdf"
+        self.regex = r"https://content-eu-central-1\.knowunity\.com/CONTENT/([A-Za-z0-9_]+)(?:_COMPRESSED)?\.pdf"
 
     def get_pdf_links(self) -> List[str]:
         """
@@ -57,7 +46,7 @@ class PDFLinkHandler:
         return list(
             dict.fromkeys(
                 [
-                    f"https://content-eu-central-1.knowunity.com/CONTENT/{link}_COMPRESSED.pdf"
+                    f"https://content-eu-central-1.knowunity.com/CONTENT/{link}.pdf"
                     for link in self.links
                 ]
             )
@@ -143,7 +132,7 @@ class MainWindow(QMainWindow):
             logging.info("Downloading PDFs...")
             for pdf_link in pdf_links:
                 pdf_name = pdf_link.split("/")[-1].split("_")[0]
-                pdf_path = os.path.join(output_dir, f"{pdf_name}_COMPRESSED.pdf")
+                pdf_path = os.path.join(output_dir, f"{pdf_name}.pdf")
                 if os.path.exists(pdf_path):
                     continue
                 response = requests.get(pdf_link, stream=True)
