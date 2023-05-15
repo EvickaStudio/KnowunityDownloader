@@ -1,6 +1,7 @@
 # Knowunity PDF Downloader
 
 This is a Python application for downloading PDFs from Knowunity. Tested on Python 3.7.9
+If you find a bug/problem then you can report it to me on Discord: Kireno#2338
 
 ## Requirements
 
