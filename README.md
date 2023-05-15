@@ -19,10 +19,11 @@ If you find a bug/problem then you can report it to me on Discord: Kireno#2338
 
 1. Click on the post you want to download
 2. Click Share and copy the URL.
-3. Run the application: `python main.py`.
-4. Enter the URL of the post.
-5. Select an output directory.
-6. Click the "Download" button.
+3. Or search on https://knowunity.de/knows and copy the URL.
+4. Run the application: `python main.py`.
+5. Enter the URL of the post.
+6. Select an output directory.
+7. Click the "Download" button.
 
 ## Features
 
