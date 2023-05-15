@@ -1,12 +1,13 @@
 # Knowunity PDF Downloader
 
-This is a Python application for downloading PDFs from Knowunity.
+This is a Python application for downloading PDFs from Knowunity. Tested on Python 3.7.9
 
 ## Requirements
 
 - Python 3.x
 - PyQt5
 - requests
+- re
 
 ## Installation
 
@@ -15,14 +16,17 @@ This is a Python application for downloading PDFs from Knowunity.
 
 ## Usage
 
-1. Run the application: `python main.py`.
-2. Enter the URL of the KnowUnity page.
-3. Select an output directory.
-4. Click the "Download" button.
+1. Click on the post you want to download
+2. Click Share and copy the URL.
+3. Run the application: `python main.py`.
+4. Enter the URL of the post.
+5. Select an output directory.
+6. Click the "Download" button.
 
 ## Features
 
-- Downloads PDFs from a KnowUnity page.
+- Downloads PDFs from a Knowunity link.
+- Supports posts with multiple attached files.
 - Saves PDFs to a specified output directory.
-- Removes duplicate PDF links.
-- Saves last used output directory and dark mode state.
+- Dark mode available.
+- GUI built with PyQt5.
