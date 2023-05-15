@@ -30,3 +30,7 @@ This is a Python application for downloading PDFs from Knowunity. Tested on Pyth
 - Saves PDFs to a specified output directory.
 - Dark mode available.
 - GUI built with PyQt5.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
