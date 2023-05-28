@@ -32,6 +32,11 @@ This is a Python application for downloading PDFs from Knowunity. Tested on Pyth
 - Dark mode available.
 - GUI built with PyQt5.
 
+## Disclaimer
+
+Please note that web scraping and downloading content from a website without the owner's permission may be illegal in certain situations. However, after reviewing the TOS for Knowunity, I did not find any explicit prohibitions against these actions. Additionally, the code does not include any external API keys, authentication mechanisms, nor does it bypass any security measures. It only uses publicly available information.
+Read the TOS her: https://knowunity.de/legal/tos
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
