@@ -64,3 +64,9 @@ Contact me on Discord: Kireno#2338
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Development
+
+A fluent-design style version for Windows 11 has been created, but is still in beta and may not work on Windows 10 or any OS other than Windows 11. Once the version is ready, it will be shared on GitHub. I had to switch from PyQt5 to tkinter, so it will probably take some time until an official version is released.
+
+![Image description](https://i.imgur.com/CtOGukI.png)
