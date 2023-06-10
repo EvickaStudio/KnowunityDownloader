@@ -59,6 +59,7 @@ The Knowunity PDF Downloader has the following features:
 
 Please note that web scraping and downloading content from a website without the owner's permission may be illegal in certain situations. However, after reviewing the TOS for Knowunity, I did not find any explicit prohibitions against these actions. Additionally, the code does not include any external API keys, authentication mechanisms, nor does it bypass any security measures. It only uses publicly available information.
 Read the TOS here: https://knowunity.de/legal/tos
+Contact me on Discord: Kireno#2338
 
 ## License
 
